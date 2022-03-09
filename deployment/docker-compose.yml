@@ -15,7 +15,7 @@ services:
     environment:
       KAFKA_CREATE_TOPICS: "events:1:1" # topic:partition:replicas
       KAFKA_ADVERTISED_HOST_NAME: pg-acit3855-kafka.eastus.cloudapp.azure.com # docker-machine DNS
-      KAFKA_LISTENERS: INSIDE://:2902,OUTSIDE://:9092
+      KAFKA_LISTENERS: INSIDE://:29092,OUTSIDE://:9092
       KAFKA_INTER_BROKER_LISTNER_NAME: INSIDE
       KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:29092,OUTSIDE://pg-acit3855-kafka.eastus.cloudapp.azure.com:9092
       KAFKA_LISTENER_SECURITY_PORTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
